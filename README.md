@@ -2,7 +2,7 @@
 
 A simple BMI (Body Mass Index) calculator. The user enters their height and weight and gets their BMI and category. Built for Task 6 (BMI Calculator) of my Web Development internship.
 
-**Live page:** 
+**Live page:** https://cedrick40.github.io/bmi-calculator/
 
 ## About the project
 
