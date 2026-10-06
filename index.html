@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator">
+    <h1>BMI Calculator</h1>
+    <p class="subtitle">Enter your height and weight to find your Body Mass Index.</p>
+
+    <form id="bmi-form" novalidate>
+
+      <div class="field">
+        <label for="height">Height</label>
+        <div class="input-wrap">
+          <input type="text" id="height" inputmode="decimal" placeholder="e.g. 170" autocomplete="off">
+          <span class="unit">cm</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="weight">Weight</label>
+        <div class="input-wrap">
+          <input type="text" id="weight" inputmode="decimal" placeholder="e.g. 65" autocomplete="off">
+          <span class="unit">kg</span>
+        </div>
+      </div>
+
+      <p id="error" class="error" aria-live="polite"></p>
+
+      <button type="submit">Calculate BMI</button>
+    </form>
+
+    <div id="result" class="result" hidden>
+      <p class="result-label">Your BMI</p>
+      <p id="bmi-value" class="bmi-value"></p>
+      <p id="bmi-category" class="bmi-category"></p>
+      <p id="bmi-message" class="bmi-message"></p>
+    </div>
+
+    <p class="note">BMI is a general guide only, not a medical diagnosis.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
